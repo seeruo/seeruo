@@ -1,0 +1,13 @@
+#!/d/php7/bin/php
+<?php
+require_once '../vendor/autoload.php';
+$config = [
+	'title' 			=> 'MY BLOG', 			// 网站名称
+	'root' 				=> __DIR__,				// 网站根目录
+    'url'       		=> '',                  // 网站URL
+    'push_address'      => '127.0.0.1',     	// SSH推送地址
+    'push_path'         => '/var/www/html/blog', // SSH推送路径,该服务器的路径必须要开启写权限
+];
+
+$app = new \Seeruo\App($config);
+$app->run();

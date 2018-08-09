@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta author="{{web_author}}">
+	<meta description="{{web_description}}">
+	<meta keywords="{{web_keywords}}">
+	<title>{{title}} | {{web_title}}</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+	<main>
+		<div class="sibar">
+			<div class="logo">
+				<a href="/">{{web_title}}</a>
+			</div>
+			<div class="all-list">
+		        <ul>
+		        {% for item in articles_list %}
+		            <li><a href="{{ item.href }}" 
+		            	{% if active == item.active %} class="active" {% endif %} >
+		            	{{ item.title }}</a>
+		           	</li>
+		        {% endfor %}
+		        </ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="markdown-body">
+			{{content}}
+			</div>
+		</div>
+	</main>
+</body>
+</html>
