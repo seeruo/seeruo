@@ -1,7 +1,6 @@
-#!/d/php7/bin/php
 <?php
 require_once '../vendor/autoload.php';
 $config = include_once 'config.php';
 
 $app = new \Seeruo\App($config);
-$app->run();
+$app->run('web');

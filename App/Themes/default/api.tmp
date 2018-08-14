@@ -30,6 +30,8 @@
 			<div class="markdown-body">
 				<h2>{{title}}</h2>
 				{{ content|raw }}
+				<h2>返回 </h2>
+				<textarea style="width: 100%; height: 350px;">{{response}}</textarea>
 			</div>
 		</div>
 	</main>
