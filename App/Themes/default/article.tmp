@@ -29,6 +29,28 @@
 		<div class="content">
 			<div class="markdown-body">
 				<h2>{{title}}</h2>
+
+				<!-- 接口调试工具模版 start -->
+				{% if api_url %}
+				<h4>请求地址：</h4>
+				<p>{{ api_url }}</p>
+				{% endif %}
+
+				{% if api_method %}
+				<h4>请求方式：</h4>
+				<p>{{ api_method }}</p>
+				{% endif %}
+
+				{% if api_params %}
+				<h4>请求参数：</h4>
+				<p>{{ api_params }}</p>
+				{% endif %}
+
+				{% if api_url %}
+				<p><a href="?model=api">测试请求</a>（开发模式才能进行）</p>
+				{% endif %}
+				<!-- 接口调试工具模版 end -->
+
 				{{ content|raw }}
 			</div>
 		</div>
