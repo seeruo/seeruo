@@ -3,15 +3,15 @@
     "description": "this is a tool that build static website by php",
     "type": "project",
     "require": {
-        "seeruo/seeruo-framework":"^1.0"
+        "seeruo/framework":"^1.0"
     },
     "require-dev": {
-        "seeruo/seeruo-framework":"^1.0"
+        "seeruo/framework":"^1.0"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Danier seeruo",
+            "name": "Danier Seeruo",
             "email": "cdking95@qq.com"
         }
     ],
