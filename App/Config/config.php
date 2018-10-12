@@ -18,9 +18,9 @@ return [
     'push_path'         => '/var/www/html/blog',        // SSH服务器网站根路径,该路径需开启写权限
     
     // ::选填
-    'home_page'         => '单页/home.md',               // 是否需要使用md文件作为主页
+    'home_page'         => 'home.md',               // 是否需要使用md文件作为主页
     'single_pages'      => [                            // 单独解析的md文件，解析路径为 url/'你设置的链接'
-        'about'             => '单页/about.md',          // 路径为 http://www.example.com/about
-        'linker'            => '单页/linker.md'          // 路径为 http://www.example.com/linker
+        'about'             => 'about.md',          // 路径为 http://www.example.com/about
+        'linker'            => 'linker.md'          // 路径为 http://www.example.com/linker
     ],
 ];
