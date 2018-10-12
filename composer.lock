@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12d8e27da889b9fb50bbd66bff4f3d84",
+    "content-hash": "78c5f47c62ff7852f1daff014d444a3b",
     "packages": [
         {
             "name": "seeruo/framework",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/seeruo/framework.git",
-                "reference": "0917f282a753b40f04810598f2d77e74d35dc592"
+                "reference": "738684d76c02245078499f29b30ce0e22983e9a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/seeruo/framework/zipball/0917f282a753b40f04810598f2d77e74d35dc592",
-                "reference": "0917f282a753b40f04810598f2d77e74d35dc592",
+                "url": "https://api.github.com/repos/seeruo/framework/zipball/738684d76c02245078499f29b30ce0e22983e9a8",
+                "reference": "738684d76c02245078499f29b30ce0e22983e9a8",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 }
             ],
             "description": "this is a tool that build static website by php",
-            "time": "2018-10-12T07:49:32+00:00"
+            "time": "2018-10-12T09:08:04+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
