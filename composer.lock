@@ -7,62 +7,24 @@
     "content-hash": "12d8e27da889b9fb50bbd66bff4f3d84",
     "packages": [
         {
-            "name": "joyqi/hyper-down",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SegmentFault/HyperDown.git",
-                "reference": "7931f6b1058ab5a8643560c98c78077db3f8695a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SegmentFault/HyperDown/zipball/7931f6b1058ab5a8643560c98c78077db3f8695a",
-                "reference": "7931f6b1058ab5a8643560c98c78077db3f8695a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "HyperDown\\": "./"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "joyqi",
-                    "email": "joyqi@segmentfault.com"
-                }
-            ],
-            "description": "A light weight markdown parser library",
-            "time": "2018-07-20T07:18:39+00:00"
-        },
-        {
             "name": "seeruo/framework",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/seeruo/framework.git",
-                "reference": "f019ecba8e6ad074c2e5eaf0e8ee6fd394c2c89f"
+                "reference": "0917f282a753b40f04810598f2d77e74d35dc592"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/seeruo/framework/zipball/f019ecba8e6ad074c2e5eaf0e8ee6fd394c2c89f",
-                "reference": "f019ecba8e6ad074c2e5eaf0e8ee6fd394c2c89f",
+                "url": "https://api.github.com/repos/seeruo/framework/zipball/0917f282a753b40f04810598f2d77e74d35dc592",
+                "reference": "0917f282a753b40f04810598f2d77e74d35dc592",
                 "shasum": ""
             },
             "require": {
-                "joyqi/hyper-down": "dev-master",
                 "php": ">=5.6",
                 "twig/twig": "^1.0"
             },
             "require-dev": {
-                "joyqi/hyper-down": "dev-master",
                 "php": ">=5.6",
                 "twig/twig": "^1.0"
             },
@@ -83,7 +45,7 @@
                 }
             ],
             "description": "this is a tool that build static website by php",
-            "time": "2018-08-26T10:31:35+00:00"
+            "time": "2018-10-12T07:49:32+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -149,12 +111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "82515f6339fd223a6a6a40a432e6e61b8d6d269f"
+                "reference": "4eea72c25c98d3cd94cd8449c08fd81fe2ab91c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/82515f6339fd223a6a6a40a432e6e61b8d6d269f",
-                "reference": "82515f6339fd223a6a6a40a432e6e61b8d6d269f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4eea72c25c98d3cd94cd8449c08fd81fe2ab91c3",
+                "reference": "4eea72c25c98d3cd94cd8449c08fd81fe2ab91c3",
                 "shasum": ""
             },
             "require": {
@@ -207,7 +169,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-08-03T05:53:41+00:00"
+            "time": "2018-09-27T14:33:24+00:00"
         }
     ],
     "packages-dev": [],

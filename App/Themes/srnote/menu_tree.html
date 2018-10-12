@@ -1,0 +1,19 @@
+<ul class="mul" style="margin-left: 20px;">
+{% for item in comment %}
+    <li><a href="{{ item.href }}" 
+        {% if item.uuid==page_uuid or item.uuid==page_uuid_type_now %} class="active" {% endif %} 
+        >{{ item.title }}</a></li>
+    {% if item.child %}
+        {% set isshow = 0 %}
+        {% for pu in page_uuid_type %}
+            {% if item.uuid == pu %}
+            {% set isshow = 1 %}
+            {% endif %}
+        {% endfor %}
+
+        {% if isshow == 1 %}
+            {% include 'menu_tree.html' with {'comment': item.child, 'level': level+1} %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</ul>

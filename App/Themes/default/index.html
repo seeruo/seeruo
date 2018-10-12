@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if content %}
+    	<h1>SeeRuo-PHP静态博客网站构建工具</h1>
+    	<small>快速、简洁且高效的博客框架</small>
+    	<h1>{{title}}</h1>
+        {{ content|raw }}
+    {% else %}
+        {% for item in articles_list %}
+            <div class="content-block">
+                <blockquote class="article-one ">
+                    <h2>
+                        <a href="{{ item.href }}" > {{ item.title }} </a>
+                        <span class="fa fa-clock-o"> {{ item.date  }} </span>
+                    </h2>
+                    <section>{{ item.description|raw  }}</section>
+                </blockquote>
+            </div>
+        {% endfor %}
+        <blockquote class="archives-one ">
+            <div>{{ articles_pages|raw }}</div>
+        </blockquote>
+    {% endif %}
+{% endblock %}

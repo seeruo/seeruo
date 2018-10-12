@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-block">
+        {% for item in articles_list %}
+        <blockquote class="archives-one ">
+            <h2>
+                <a href="{{ item.href }}">{{ item.title }}</a>
+                <span class="fa fa-clock-o"> {{ item.date  }} </span>
+            </h2>
+            <div>
+                <i class="fa fa-bookmark"> {% for tag in item.tags %} {{tag}}&nbsp; {% endfor %}</i>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-book"> {% for tp in item.type %} {{tp}}&nbsp; {% endfor %}</i>
+            </div>
+        </blockquote>
+        {% endfor %}
+        <blockquote class="archives-one ">
+            <div>{{ articles_pages|raw }}</div>
+        </blockquote>
+    </div>
+{% endblock %}

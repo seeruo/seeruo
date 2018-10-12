@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta author="{{web_author}}">
+    <meta description="{{web_description}}">
+    <meta keywords="{{web_keywords}}">
+    <title>{% if title %} {{title}} - {% endif %} {{web_title}}</title>
+    <link rel="shortcut icon" href="/static/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/prism/prism.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/srsearch/srsearch.css">
+    <script type="text/javascript" src="/static/srsearch/srsearch.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="sibar">
+            <div class="logo">
+                <a href="/">{{web_title}}</a>
+                <small>< 轻量化静态网站构建工具 ></small>
+            </div>
+            <div class="menu">
+                <ul class="mul" style="margin-left: 20px;">
+                {% for item in articles_file_index %}
+                    <li><a href="{{ item.href }}"
+                        {% if page_uuid == item.uuid %} class="active" {% endif %} >
+                        {{ item.title }}</a>
+                        {% if page_uuid == item.uuid %} 
+                            <ul class="mul" style="margin-left: 30px;">
+                            {% for c in item.child %}
+                                <li><a style="font-size: 12px" onclick="goto(this)" class="cmenu" href="{{ c.href }}">{{ c.title }}</a></li>
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            
+            <div class="links">
+                <a target="_blank" href="http://seeruo.codegrids.com">Sr</a>
+                <a target="_blank" href="https://github.com/seeruo"><i class="fa fa-github"></i></a>
+                <a target="_blank" href="mailto:cdking95@gmail.com"><i class="fa fa-envelope-o"> </i></a>
+                <a><i class="fa fa-search" id="searchDiv"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="markdown-body">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </main>
+    <script src="/static/prism/prism.js"></script>
+    <script type="text/javascript">
+        function goto(e){
+            var c = document.querySelectorAll('.cmenu');
+            c.forEach(function(item,i){
+                item.classList.remove("cactive");
+            });
+            e.classList.add("cactive");
+        }
+        SrSearch('#searchDiv',{
+            // apiBase:"http://www.codegrids.com/articles"
+        })
+    </script>
+</body>
+</html>

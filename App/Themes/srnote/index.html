@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for item in articles_list %}
+        <div class="content-block">
+            <blockquote class="article-one ">
+                <h2>
+                    <a href="{{ item.href }}" > {{ item.title }} </a>
+                    <span class="fa fa-clock-o"> {{ item.date  }} </span>
+                </h2>
+                <section>{{ item.description|raw  }}</section>
+            </blockquote>
+        </div>
+    {% endfor %}
+    <blockquote class="archives-one ">
+        <div>{{ articles_pages|raw }}</div>
+    </blockquote>
+{% endblock %}
