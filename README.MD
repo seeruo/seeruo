@@ -1,28 +1,30 @@
 
 基于PHP开发的静态网站构建工具-Seeruo
 
-#### 版本开发计划
-> 1.0 稳定基础功能
-* 创建文件，完成文章编辑
-* Markdown文件解析
-* 本地预览文件
-* 文章发布到生产环境(如：阿里云服务器)
+#### 版本规划
+> 1.0 开发基础功能，包括如下：
+* 创建markdown文件，使用自己喜欢的编辑器完成文章编辑
+* 使用seeruo解析markdown文件为静态文件，并设置归档，分页等功能
+* 使用软件自带服务器功能，本地预览网页
+* 使用ssh发布文章到生产环境(如：阿里云服务器)
 
-> 2.0 （1.0版本存在的问题优化）
-* 创建的中文文件，实现中文URL解析，及本地中文URL预览
+> 2.0 
+* 1.0版本存在的问题优化
 * 实现Git上传到github page及其他类似的静态网页展示仓库
-* 实现FTP上传虚拟空间的上传
+* 实现一些常用的博客插件的扩展钩子
+* 开放平台，实现软件的注册使用
+
+#### 准备开始
+> 开始安装，使用之前有些条件需要满足，当然phper应该都已经有这些了：
+- 安装php，并设置环境变量: 下载地址
+- 安装Composer工具: 下载地址
 
 #### 安装seeruo
 ```language-shell
 composer create-project seeruo/seeruo myblog
 ```
 
-#### 快速开始
-> 开始使用之前要求：
-* PHP的环境变量已经配置
-* 进入'myblog/App'目录
-
+#### 开始使用
 > 1.创建文件
 ```language-shell
 php seeruo create 'filename' //不需要加文件后缀
@@ -46,7 +48,7 @@ php seeruo server
 ```language-shell
 php seeruo push
 ```
-注意：这里需要到seeruo里面去配置配置文件，配置内容如下
+注意：如果需要发布到生产环境，这里需要到Config/config.php里面去配置配置文件，配置项如下:
 ```language-php
 'push_type'         => 'ssh',               // 暂时只支持ssh方式，需要服务器开启的SSH支持
 'push_user'         => 'root',              // SSH账号
