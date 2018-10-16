@@ -8,8 +8,8 @@ date: 2018-08-07 14:55:20
 
 我是Danier（左浪），PHP程序员!
 
+
 #### 联系我
 
-* <a href="mailto:cdking95@qq.com" target="_blank">cdking95@qq.com</a>
-* <a href="https://github.com/seeruo" target="_blank">Git</a>
-* QQ: 552850955
+* 邮箱地址:<a href="mailto:cdking95@qq.com" target="_blank">cdking95@qq.com</a>
+* Git地址:<a href="https://github.com/seeruo" target="_blank">Git</a>

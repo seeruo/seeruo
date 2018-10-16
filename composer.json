@@ -3,10 +3,10 @@
     "description": "this is a tool that build static website by php",
     "type": "project",
     "require": {
-        "seeruo/framework":"dev-master"
+        "seeruo/framework":"v1.0"
     },
     "require-dev": {
-        "seeruo/framework":"dev-master"
+        "seeruo/framework":"v1.0"
     },
     "license": "MIT",
     "authors": [
