@@ -1,3 +1,8 @@
 composer.phar
-/.DS_Store
 composer.lock
+App/Public/*
+.DS_Store
+Thumbs.db
+/phpunit.xml
+/.idea
+/.vscode
