@@ -25,6 +25,25 @@ small{
 	overflow-x: hidden;
 	overflow-y: auto;
 	background-color: #103854;
+	transform:translateX(0px);
+	transition:all .2s;
+	-moz-transition:all .2s; /* Firefox 4 */
+	-webkit-transition:all .2s; /* Safari and Chrome */
+	-o-transition:all .2s; /* Opera */
+}
+.sibar-btn{
+	display: block;
+	z-index: 999;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 3px;
+	color: #103854;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 40px !important;
 }
 .sibar>.author_header{
 	height: 60px;
@@ -270,6 +289,30 @@ small{
 	margin-left:0px!important;
 	line-height: 25px;
 }
+
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+	.sibar {
+		transform:translateX(-300px);
+		width: 0px;
+	}
+	.sibar-hide {
+		width: 300px;
+		transform:translateX(0px);
+		display: flex !important;
+	}
+	.article-one>h2{
+		flex-direction: column;
+	}
+	.content{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
 
 /**
  * GITHUB CSS 样式
