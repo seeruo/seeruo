@@ -297,7 +297,7 @@ small{
 		display: block;
 		z-index: 999;
 	}*/
-	.sibar-hide {
+	.sibar-show {
 		width: 300px;
 		transform:translateX(0px);
 		display: flex !important;

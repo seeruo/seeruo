@@ -55,10 +55,10 @@
             var bar = document.querySelector('.sibar');
             var sty = bar.dataset.status;
             if(sty === 'hide'){
-                bar.classList.add('sibar-hide');
+                bar.classList.add('sibar-show');
                 bar.dataset.status = 'show';
             }else{
-                bar.classList.remove('sibar-hide');
+                bar.classList.remove('sibar-show');
                 bar.dataset.status = 'hide';
             }
         }
