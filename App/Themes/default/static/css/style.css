@@ -303,9 +303,6 @@ small{
 	.article-one>h2{
 		flex-direction: column;
 	}
-	.content{
-		width: 100%;
-	}
 }
 
 
