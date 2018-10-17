@@ -25,15 +25,9 @@ small{
 	overflow-x: hidden;
 	overflow-y: auto;
 	background-color: #103854;
-	transform:translateX(0px);
-	transition:all .2s;
-	-moz-transition:all .2s; /* Firefox 4 */
-	-webkit-transition:all .2s; /* Safari and Chrome */
-	-o-transition:all .2s; /* Opera */
 }
 .sibar-btn{
-	display: block;
-	z-index: 999;
+	display: none;
 	height: 40px;
 	width: 40px;
 	line-height: 40px;
@@ -292,9 +286,17 @@ small{
 
 @media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
 	.sibar {
-		transform:translateX(-300px);
 		width: 0px;
+		transform:translateX(-300px);
+		transition:all .2s;
+		-moz-transition:all .2s; /* Firefox 4 */
+		-webkit-transition:all .2s; /* Safari and Chrome */
+		-o-transition:all .2s; /* Opera */
 	}
+	/*.sibar-btn{
+		display: block;
+		z-index: 999;
+	}*/
 	.sibar-hide {
 		width: 300px;
 		transform:translateX(0px);
