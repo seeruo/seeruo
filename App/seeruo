@@ -1,5 +1,12 @@
 #!/d/php7/bin/php
 <?php
-require_once '../vendor/autoload.php';
-$app = new \Seeruo\Worker(__DIR__);
+
+define('ROOT', __DIR__);
+
+require ROOT.'/../vendor/autoload.php';
+
+$config = require ROOT.'/Config/config.php';
+
+$app = new \App\Application($config);
+
 $app->run();
